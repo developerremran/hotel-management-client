@@ -11,8 +11,14 @@ import Testimonial from '../Components/Testimonial/Testimonial';
 
 const Home = () => {
     return (
-        <div className='container mx-auto'>
+        <div >
             <Banner></Banner>
+
+
+            <div className='container mx-auto'>
+
+           
+
             <TitleSEction title={'Order Online'} subTitle={'---From 11:00am to 10:00pm---'}></TitleSEction>
             <div className='mt-10 mb-28'>
                 <HomeSlide></HomeSlide>
@@ -46,7 +52,7 @@ const Home = () => {
 
 
 
-
+            </div> 
 
         </div>
     );

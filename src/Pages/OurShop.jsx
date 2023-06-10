@@ -1,9 +1,18 @@
 import React from 'react';
+import CoverSEction from '../Components/CoverSection/CoverSEction';
 
+
+import bgimg from '../assets/shop/banner2.jpg'
+import TabsRecepi from '../Tabs/TabsRecepi';
 const OurShop = () => {
     return (
-        <div>
-            <h2>This is a shop page</h2>
+        <div >
+            <CoverSEction BgCoverPic={bgimg} title={'OUR SHOP'} description={'Would you like to try a dish?'}></CoverSEction>
+
+
+            <div className='container mx-auto mt-10 mb-10'>
+                <TabsRecepi></TabsRecepi>
+            </div>
         </div>
     );
 };

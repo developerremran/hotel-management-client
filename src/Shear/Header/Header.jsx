@@ -5,7 +5,7 @@ import { FaCartPlus, FaUserAlt } from 'react-icons/fa';
 const Header = () => {
     return (
         <div>
-            <div className="navbar bg-base-100 pt-3 pb-3 px-5">
+            <div className="navbar bg-[#15151580]   fixed z-10 text-white pt-3 h-[90px] pb-3 px-5">
                 <div className="flex-1">
                     <a className="btn btn-ghost normal-case text-5xl italic">Bistro Boss</a>
                 </div>
@@ -19,6 +19,7 @@ const Header = () => {
                         <li><Link to='/our-shop'>Cary</Link></li>
                        
                         <li><Link to='/our-shop'>Sign in</Link></li>
+                        <li><Link to='/register'>Register</Link></li>
                         <FaUserAlt className='text-2xl font-bold'></FaUserAlt>
                     </ul>
                 </div>

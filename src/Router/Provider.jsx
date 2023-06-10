@@ -5,6 +5,7 @@ import ContactUs from "../Pages/ContactUs";
 import Dashboard from "../Pages/Dashboard";
 import OurMenu from "../Pages/OurMenu";
 import OurShop from "../Pages/OurShop";
+import Register from "../Pages/Register";
 
 export const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
             {
                 path:'/our-shop',
                 element:<OurShop></OurShop>
+            },
+            {
+                path:'/register',
+                element:<Register></Register>
             },
         ]
     }
