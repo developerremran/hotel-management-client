@@ -6,8 +6,8 @@ import useData from '../CustomHook/useData';
 import SingleLineCard from '../Components/Card/SingleProductLine/SingleLineCard';
 
 // image 
-import img1 from '../assets/menu/banner3.jpg'
 import img2 from '../assets/home/chef-service.jpg'
+import FullLineCard from '../Components/Card/FullLineCard/FullLineCard';
 
 
 
@@ -23,77 +23,48 @@ const OurMenu = () => {
 
     return (
         <div>
-            <CoverSEction BgCoverPic={img1} title={'Our Menu'} description={'Would you like to try a dish?'}></CoverSEction>
+            {/* <CoverSEction BgCoverPic={img1} title={'Our Menu'} description={'Would you like to try a dish?'}></CoverSEction>
 
             <TitleSEction subTitle={'---Dont miss---'} title={'TODAYs OFFER'}></TitleSEction>
             <div className='grid grid-cols-2 gap-5 container mx-auto '>
                 {
-                    populars.map(perProduct => <SingleLineCard key={perProduct._id} perProduct={perProduct}></SingleLineCard>)
+                    item.map(perProduct => <SingleLineCard key={perProduct._id} perProduct={perProduct}></SingleLineCard>)
                 }
                 
             </div>
             <div className="card-actions flex  justify-center">
                     <button className="text-[#BB8506] btn  border-b-4 border-x-0 border-t-0 border-[#BB8506] ">View all Menu</button>
-                </div>
+                </div> */}
+
+                <FullLineCard item={populars} title={"populars"}></FullLineCard>
 
             {/* 2 */}
 
             <div className='mt-28'>
-                <CoverSEction BgCoverPic={img2} title={'DESSERTS'} description={'Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'}></CoverSEction>
-                <div className='grid grid-cols-2 gap-5 container mx-auto  mt-20 mb-20'>
-                    {
-                        desserts.map(perProduct => <SingleLineCard key={perProduct._id} perProduct={perProduct}></SingleLineCard>)
-                    }
-                    
-                </div>
-                <div className="card-actions flex justify-center">
-                        <button className="text-[#BB8506] btn  border-b-4 border-x-0 border-t-0 border-[#BB8506] ">View all Menu</button>
-                    </div>
+
+                    <FullLineCard item={desserts}  title={"desserts"}></FullLineCard>
 
             </div>
 
 
             {/* 3 */}
             <div className='mt-28'>
-                <CoverSEction BgCoverPic={img2} title={'pizza'} description={'Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'}></CoverSEction>
-                <div className='grid grid-cols-2 gap-5 container mx-auto  mt-20 mb-20'>
-                    {
-                        pizzas.map(perProduct => <SingleLineCard key={perProduct._id} perProduct={perProduct}></SingleLineCard>)
-                    }
-                    <div className="card-actions flex justify-center">
-                        <button className="text-[#BB8506] btn  border-b-4 border-x-0 border-t-0 border-[#BB8506] ">View all Menu</button>
-                    </div>
-                </div>
+                
+            <FullLineCard item={pizzas} title={'pizzas'}></FullLineCard>
 
             </div>
             {/* 4 */}
 
             <div className='mt-28'>
-                <CoverSEction BgCoverPic={img2} title={'SALAD'} description={'Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'}></CoverSEction>
-                <div className='grid grid-cols-2 gap-5 container mx-auto  mt-20 mb-20'>
-                    {
-                        salads.map(perProduct => <SingleLineCard key={perProduct._id} perProduct={perProduct}></SingleLineCard>)
-                    }
-                    
-                </div>
-                <div className="card-actions flex justify-center">
-                        <button className="text-[#BB8506] btn  border-b-4 border-x-0 border-t-0 border-[#BB8506] ">View all Menu</button>
-                    </div>
+            <FullLineCard item={salads} title={"salads"}></FullLineCard>
+                
 
             </div>
             {/* 5 */}
 
             <div className='mt-28'>
-                <CoverSEction BgCoverPic={img2} title={'SOUPS'} description={'Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'}></CoverSEction>
-                <div className='grid grid-cols-2 gap-5 container mx-auto  mt-20 mb-20'>
-                    {
-                        soups.map(perProduct => <SingleLineCard key={perProduct._id} perProduct={perProduct}></SingleLineCard>)
-                    }
-                    
-                </div>
-                <div className="card-actions flex justify-center">
-                        <button className="text-[#BB8506] btn  border-b-4 border-x-0 border-t-0 border-[#BB8506] ">View all Menu</button>
-                    </div>
+            <FullLineCard item={soups} title={"soups"}></FullLineCard>
+                
 
             </div>
 
@@ -102,3 +73,6 @@ const OurMenu = () => {
 };
 
 export default OurMenu;
+
+
+

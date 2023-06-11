@@ -16,8 +16,6 @@ const Header = () => {
                         <li><Link to='/dashBoard'>DashBoard</Link></li>
                         <li><Link to='/our-menu'>Our Menu</Link></li>
                         <li><Link to='/our-shop'>Our Shop</Link></li>
-                        <li><Link to='/our-shop'>Cary</Link></li>
-                       
                         <li><Link to='/our-shop'>Sign in</Link></li>
                         <li><Link to='/register'>Register</Link></li>
                         <FaUserAlt className='text-2xl font-bold'></FaUserAlt>
